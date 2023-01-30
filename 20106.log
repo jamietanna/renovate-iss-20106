@@ -1,0 +1,417 @@
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /Users/jamietanna/workspaces/tmp/renovate-iss-20106/config.js
+DEBUG: No config file found on disk - skipping
+ WARN: cli config dryRun property has been changed to full
+DEBUG: File config
+       "config": {}
+DEBUG: CLI config
+       "config": {
+         "repositories": ["jamietanna/renovate-iss-20106"],
+         "dryRun": "full",
+         "token": "***********"
+       }
+DEBUG: Env config
+       "config": {"hostRules": []}
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "repositories": ["jamietanna/renovate-iss-20106"],
+         "dryRun": "full",
+         "token": "***********"
+       }
+DEBUG: Found valid git version: 2.38.1
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=241)
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "jamietanna", "name": "Jamie Tanna"},
+         "userEmail": null
+       },
+       "renovateUsername": "jamietanna"
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: Using baseDir: /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate
+DEBUG: Using cacheDir: /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate/cache
+DEBUG: Using containerbaseDir: /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+ INFO: Repository started (repository=jamietanna/renovate-iss-20106)
+       "renovateVersion": "34.97.1"
+DEBUG: Using localDir: /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate/repos/github/jamietanna/renovate-iss-20106 (repository=jamietanna/renovate-iss-20106)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=jamietanna/renovate-iss-20106)
+DEBUG: initRepo("jamietanna/renovate-iss-20106") (repository=jamietanna/renovate-iss-20106)
+DEBUG: jamietanna/renovate-iss-20106 default branch = main (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using personal access token for git init (repository=jamietanna/renovate-iss-20106)
+DEBUG: Resetting npmrc (repository=jamietanna/renovate-iss-20106)
+DEBUG: checkOnboarding() (repository=jamietanna/renovate-iss-20106)
+DEBUG: isOnboarded() (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(renovate.json) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Initializing git repository into /var/folders/0y/wmds24yx6gz5w300t72rstcc0000gq/T/renovate/repos/github/jamietanna/renovate-iss-20106 (repository=jamietanna/renovate-iss-20106)
+DEBUG: Performing blobless clone (repository=jamietanna/renovate-iss-20106)
+DEBUG: git clone completed (repository=jamietanna/renovate-iss-20106)
+       "durationMs": 1126
+DEBUG: latest repository commit (repository=jamietanna/renovate-iss-20106)
+       "latestCommit": {
+         "hash": "2d5fd171d3bd2b7b425194a034f1694df8a4eee1",
+         "date": "2023-01-30T10:14:27+00:00",
+         "message": "init",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "",
+         "author_name": "Jamie Tanna",
+         "author_email": "jamie.tanna@deliveroo.co.uk"
+       }
+DEBUG: findFile(renovate.json5) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.github/renovate.json) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.github/renovate.json5) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.gitlab/renovate.json) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.gitlab/renovate.json5) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.renovaterc) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.renovaterc.json) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findFile(.renovaterc.json5) (repository=jamietanna/renovate-iss-20106)
+DEBUG: config file not found (repository=jamietanna/renovate-iss-20106)
+DEBUG: findPr(renovate/configure, Configure Renovate, !open) (repository=jamietanna/renovate-iss-20106)
+DEBUG: getPrList success (repository=jamietanna/renovate-iss-20106)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: Found no closed onboarding PR (repository=jamietanna/renovate-iss-20106)
+DEBUG: Repo is not onboarded (repository=jamietanna/renovate-iss-20106)
+DEBUG: getBranchPr(renovate/configure) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findPr(renovate/configure, undefined, open) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findPr(renovate/configure, undefined, closed) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Onboarding PR does not exist (repository=jamietanna/renovate-iss-20106)
+DEBUG: Checking if this org/owner has a default Renovate preset which can be used. (repository=jamietanna/renovate-iss-20106)
+DEBUG: GET https://api.github.com/repos/jamietanna/renovate-config/contents/default.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=247) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file default.json not found in jamietanna/renovate-config (repository=jamietanna/renovate-iss-20106)
+DEBUG: GET https://api.github.com/repos/jamietanna/renovate-config/contents/renovate.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=255) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file renovate.json not found in jamietanna/renovate-config (repository=jamietanna/renovate-iss-20106)
+DEBUG: GET https://api.github.com/repos/jamietanna/.github/contents/renovate-config.json = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=404 retryCount=0, duration=237) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file renovate-config.json not found in jamietanna/.github (repository=jamietanna/renovate-iss-20106)
+DEBUG: No default org/owner preset found, so the default onboarding config will be used instead. Note: do not be concerned with any 404 messages that preceded this. (repository=jamietanna/renovate-iss-20106)
+DEBUG: onboarding config (repository=jamietanna/renovate-iss-20106)
+       "config": {"$schema": "https://docs.renovatebot.com/renovate-schema.json"}
+DEBUG: No renovate config file found (repository=jamietanna/renovate-iss-20106)
+DEBUG: migrateAndValidate() (repository=jamietanna/renovate-iss-20106)
+DEBUG: No config migration necessary (repository=jamietanna/renovate-iss-20106)
+DEBUG: massaged config (repository=jamietanna/renovate-iss-20106)
+       "config": {}
+DEBUG: migrated config (repository=jamietanna/renovate-iss-20106)
+       "config": {}
+DEBUG: Found repo ignorePaths (repository=jamietanna/renovate-iss-20106)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)\.bazelversion$ for manager bazelisk (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.cake$ for manager cake (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.circleci/config\.yml$ for manager circleci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Dockerfile[^/]*$ for manager dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)flux-system\/(?:.+\/)?gotk-components\.yaml$ for manager flux (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)\.fvm\/fvm_config\.json$ for manager fvm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^(workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)versions.props$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)versions.lock$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)values\.yaml$ for manager helm-values (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)helmfile\.yaml$ for manager helmfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Chart\.yaml$ for manager helmv3 (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.html?$ for manager html (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)Mintfile$ for manager mint (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)flake\.nix$ for manager nix (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)dotnet-tools\.json$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)global\.json$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)src/main/features/.+\.json$ for manager osgi (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)Puppetfile$ for manager puppet (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.tflint\.hcl$ for manager tflint-plugin (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^\.travis\.yml$ for manager travis (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^\.woodpecker(?:\/[^/]+)?\.ya?ml$ for manager woodpecker (repository=jamietanna/renovate-iss-20106)
+DEBUG: Matched 1 file(s) for manager dockerfile: Dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Found dockerfile package files (repository=jamietanna/renovate-iss-20106)
+DEBUG: Found 1 package file(s) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Need to create onboarding PR (repository=jamietanna/renovate-iss-20106)
+DEBUG: createOnboardingBranch() (repository=jamietanna/renovate-iss-20106)
+DEBUG: Checking if this org/owner has a default Renovate preset which can be used. (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file default.json not found in jamietanna/renovate-config (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file renovate.json not found in jamietanna/renovate-config (repository=jamietanna/renovate-iss-20106)
+DEBUG: Preset file renovate-config.json not found in jamietanna/.github (repository=jamietanna/renovate-iss-20106)
+DEBUG: No default org/owner preset found, so the default onboarding config will be used instead. Note: do not be concerned with any 404 messages that preceded this. (repository=jamietanna/renovate-iss-20106)
+DEBUG: onboarding config (repository=jamietanna/renovate-iss-20106)
+       "config": {"$schema": "https://docs.renovatebot.com/renovate-schema.json"}
+DEBUG: Creating onboarding branch (repository=jamietanna/renovate-iss-20106)
+ INFO: DRY-RUN: Would commit files to onboarding branch (repository=jamietanna/renovate-iss-20106)
+DEBUG: No renovate config file found (repository=jamietanna/renovate-iss-20106)
+DEBUG: migrateAndValidate() (repository=jamietanna/renovate-iss-20106)
+DEBUG: No config migration necessary (repository=jamietanna/renovate-iss-20106)
+DEBUG: massaged config (repository=jamietanna/renovate-iss-20106)
+       "config": {}
+DEBUG: migrated config (repository=jamietanna/renovate-iss-20106)
+       "config": {}
+DEBUG: Found repo ignorePaths (repository=jamietanna/renovate-iss-20106)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts found (repository=jamietanna/renovate-iss-20106)
+DEBUG: No vulnerability alerts found (repository=jamietanna/renovate-iss-20106)
+DEBUG: No baseBranches (repository=jamietanna/renovate-iss-20106)
+DEBUG: extract() (repository=jamietanna/renovate-iss-20106)
+DEBUG: Setting current branch to main (repository=jamietanna/renovate-iss-20106)
+DEBUG: latest commit (repository=jamietanna/renovate-iss-20106)
+       "branchName": "main",
+       "latestCommitDate": "2023-01-30T10:14:27+00:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)\.bazelversion$ for manager bazelisk (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.cake$ for manager cake (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.circleci/config\.yml$ for manager circleci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Dockerfile[^/]*$ for manager dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)flux-system\/(?:.+\/)?gotk-components\.yaml$ for manager flux (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)\.fvm\/fvm_config\.json$ for manager fvm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^(workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)versions.props$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)versions.lock$ for manager gradle (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)values\.yaml$ for manager helm-values (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)helmfile\.yaml$ for manager helmfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Chart\.yaml$ for manager helmv3 (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.html?$ for manager html (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)Mintfile$ for manager mint (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)flake\.nix$ for manager nix (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)dotnet-tools\.json$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)global\.json$ for manager nuget (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)src/main/features/.+\.json$ for manager osgi (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|\/)Puppetfile$ for manager puppet (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: \.tflint\.hcl$ for manager tflint-plugin (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^\.travis\.yml$ for manager travis (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=jamietanna/renovate-iss-20106)
+DEBUG: Using file match: ^\.woodpecker(?:\/[^/]+)?\.ya?ml$ for manager woodpecker (repository=jamietanna/renovate-iss-20106)
+DEBUG: Matched 1 file(s) for manager dockerfile: Dockerfile (repository=jamietanna/renovate-iss-20106)
+DEBUG: Found dockerfile package files (repository=jamietanna/renovate-iss-20106)
+DEBUG: Found 1 package file(s) (repository=jamietanna/renovate-iss-20106)
+ INFO: Dependency extraction complete (repository=jamietanna/renovate-iss-20106, baseBranch=main)
+       "stats": {
+         "managers": {"dockerfile": {"fileCount": 1, "depCount": 1}},
+         "total": {"fileCount": 1, "depCount": 1}
+       }
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=jamietanna/renovate-iss-20106, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=jamietanna/renovate-iss-20106, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=jamietanna/renovate-iss-20106)
+DEBUG: detectSemanticCommits() (repository=jamietanna/renovate-iss-20106)
+DEBUG: getCommitMessages (repository=jamietanna/renovate-iss-20106)
+DEBUG: semanticCommits: detected "unknown" (repository=jamietanna/renovate-iss-20106)
+DEBUG: semanticCommits: disabled (repository=jamietanna/renovate-iss-20106)
+DEBUG: 0 flattened updates found:  (repository=jamietanna/renovate-iss-20106)
+DEBUG: Returning 0 branch(es) (repository=jamietanna/renovate-iss-20106)
+DEBUG: config.repoIsOnboarded=false (repository=jamietanna/renovate-iss-20106)
+DEBUG: packageFiles with updates (repository=jamietanna/renovate-iss-20106, baseBranch=main)
+       "config": {
+         "dockerfile": [
+           {
+             "packageFile": "Dockerfile",
+             "deps": [
+               {
+                 "depName": "whitesource/renovate",
+                 "currentValue": "3.0.0-rc.0",
+                 "replaceString": "whitesource/renovate:3.0.0-rc.0",
+                 "autoReplaceStringTemplate": "{{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+                 "datasource": "docker",
+                 "depType": "final",
+                 "depIndex": 0,
+                 "updates": [],
+                 "warnings": [],
+                 "versioning": "docker",
+                 "sourceUrl": "https://github.com/whitesource/renovate-on-prem",
+                 "registryUrl": "https://index.docker.io",
+                 "changelogUrl": "https://github.com/whitesource/renovate-on-prem",
+                 "currentVersion": "3.0.0",
+                 "fixedVersion": "3.0.0-rc.0"
+               }
+             ]
+           }
+         ]
+       }
+DEBUG: detectSemanticCommits() (repository=jamietanna/renovate-iss-20106)
+DEBUG: semanticCommits: returning "disabled" from cache (repository=jamietanna/renovate-iss-20106)
+DEBUG: ensureOnboardingPr() (repository=jamietanna/renovate-iss-20106)
+DEBUG: getBranchPr(renovate/configure) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findPr(renovate/configure, undefined, open) (repository=jamietanna/renovate-iss-20106)
+DEBUG: findPr(renovate/configure, undefined, closed) (repository=jamietanna/renovate-iss-20106)
+DEBUG: Filling in onboarding PR template (repository=jamietanna/renovate-iss-20106)
+ INFO: DRY-RUN: Would check branch renovate/configure (repository=jamietanna/renovate-iss-20106)
+DEBUG: getPrList() (repository=jamietanna/renovate-iss-20106)
+DEBUG: Creating onboarding PR (repository=jamietanna/renovate-iss-20106)
+ INFO: DRY-RUN: Would create onboarding PR (repository=jamietanna/renovate-iss-20106)
+DEBUG: processRepo() (repository=jamietanna/renovate-iss-20106)
+ INFO: DRY-RUN: Would close Dependency Dashboard (repository=jamietanna/renovate-iss-20106)
+       "title": "Dependency Dashboard"
+ INFO: DRY-RUN: Would save repository cache. (repository=jamietanna/renovate-iss-20106)
+DEBUG: Removing any stale branches (repository=jamietanna/renovate-iss-20106)
+DEBUG: config.repoIsOnboarded=false (repository=jamietanna/renovate-iss-20106)
+DEBUG: No renovate branches found (repository=jamietanna/renovate-iss-20106)
+DEBUG: Retrieving issueList (repository=jamietanna/renovate-iss-20106)
+DEBUG: Retrieved 0 issues (repository=jamietanna/renovate-iss-20106)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=jamietanna/renovate-iss-20106)
+DEBUG: Branch summary (repository=jamietanna/renovate-iss-20106)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "2d5fd171d3bd2b7b425194a034f1694df8a4eee1"}],
+       "branches": [],
+       "inactiveBranches": []
+DEBUG: Renovate repository PR statistics (repository=jamietanna/renovate-iss-20106)
+       "stats": {"total": 0, "open": 0, "closed": 0, "merged": 0}
+DEBUG: Repository result: undefined, status: onboarding, enabled: true, onboarded: false (repository=jamietanna/renovate-iss-20106)
+DEBUG: Repository timing splits (milliseconds) (repository=jamietanna/renovate-iss-20106)
+       "splits": {"init": 3511, "extract": 176, "lookup": 25, "onboarding": 14, "update": 0},
+       "total": 4050
+DEBUG: Package cache statistics (repository=jamietanna/renovate-iss-20106)
+       "get": {"count": 2, "avgMs": 2, "medianMs": 1, "maxMs": 2},
+       "set": {"count": 0}
+DEBUG: http statistics (repository=jamietanna/renovate-iss-20106)
+       "urls": {
+         "https://api.github.com/graphql (POST,200)": 2,
+         "https://api.github.com/repos/jamietanna/.github/contents/renovate-config.json (GET,404)": 1,
+         "https://api.github.com/repos/jamietanna/renovate-config/contents/default.json (GET,404)": 1,
+         "https://api.github.com/repos/jamietanna/renovate-config/contents/renovate.json (GET,404)": 1,
+         "https://api.github.com/repos/jamietanna/renovate-iss-20106/pulls (GET,200)": 1
+       },
+       "hostStats": {"api.github.com": {"requestCount": 6, "requestAvgMs": 267, "queueAvgMs": 0}},
+       "totalRequests": 6
+DEBUG: dns cache (repository=jamietanna/renovate-iss-20106)
+       "hosts": []
+ INFO: Repository finished (repository=jamietanna/renovate-iss-20106)
+       "cloned": true,
+       "durationMs": 4050
+DEBUG: Renovate exiting
